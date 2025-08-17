@@ -848,7 +848,7 @@ require_once __DIR__ . '/data/base.php';
                     <img src="<?= BASE_URL . '/' . $serie['imagem'] ?>" alt="<?= $serie['titulo'] ?>">
                     <?php if (!empty($serie['onde_visto'])): ?>
                     <div class="streaming-icon" title="<?= $serie['onde_visto'] ?>">
-                        <img src="<?= "https://dexseries.onrender.com" ?>/icons/<?= getStreamingIcon($serie['onde_visto']) ?>" alt="<?= $serie['onde_visto'] ?>">
+                        <img src="<?= BASE_URL ?>/icons/<?= getStreamingIcon($serie['onde_visto']) ?>" alt="<?= $serie['onde_visto'] ?>">
                     </div>
                     <?php endif; ?>
                     
