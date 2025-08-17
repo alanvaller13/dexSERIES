@@ -88,24 +88,6 @@ function getSerieStatusColor($status) {
 // Função para obter ícones de streaming
 function getStreamingIcon($ondeVisto) {
     $icons = [
-
-        'netflix.png' => 'Netflix',
-        'primevideo.png' => 'PrimeVideo',
-        'prime-video.png' => 'PrimeVideo',
-        'globoplay.png' => 'GloboPlay',
-        'disneyplus.png' => 'Disney+',
-        'disneymais.png' => 'Disney+',
-        'paramountplus.png' => 'Paramount+',
-        'paramountmais.png' => 'Paramount+',
-        'hbomax.png' => 'HBO MAX',
-        'max.png' => 'HBO MAX',
-        'hbo.png' => 'HBO MAX',
-        'pluto.png' => 'PlutoTV',
-        'plutotv.png' => 'PlutoTV',
-        'youtube.png' => 'YouTube',
-        'tv.png' => 'Tv',
-        'web.png' => 'Web',
-        
         'Tv' => '1.png',
         'Web' => '2.png',
         'Netflix' => '3.png',
@@ -866,7 +848,7 @@ require_once __DIR__ . '/data/base.php';
                     <img src="<?= BASE_URL . '/' . $serie['imagem'] ?>" alt="<?= $serie['titulo'] ?>">
                     <?php if (!empty($serie['onde_visto'])): ?>
                     <div class="streaming-icon" title="<?= $serie['onde_visto'] ?>">
-                        <img src="<?= BASE_URL ?>/icons/<?= getStreamingIcon($serie['onde_visto']) ?>" alt="<?= $serie['onde_visto'] ?>">
+                        <img src="<?= "https://dexseries.onrender.com" ?>/icons/<?= getStreamingIcon($serie['onde_visto']) ?>" alt="<?= $serie['onde_visto'] ?>">
                     </div>
                     <?php endif; ?>
                     
