@@ -107,7 +107,6 @@ function truncarTexto($texto, $limite = 25) {
 require_once __DIR__ . '/data/base.php';
 
 // Agora você pode usar BASE_URL
-echo 'A URL base é: ' . BASE_URL;
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
