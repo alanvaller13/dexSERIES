@@ -24,7 +24,8 @@ $seriesByYear = [
     '2021' => loadJsonData('2021.json'),
     '2022' => loadJsonData('2022.json'),
     '2023' => loadJsonData('2023.json'),
-    '2024' => loadJsonData('2024.json')
+    '2024' => loadJsonData('2024.json'),
+    '2025' => loadJsonData('2025.json'),
 ];
 
 // Carrega séries por status
